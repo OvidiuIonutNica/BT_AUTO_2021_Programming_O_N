@@ -58,18 +58,22 @@ namespace BT_AUTO_2021_PRogramming
         static void Palindrom()
         {
             int nr = int.Parse(Console.ReadLine());
-            int cNr = nr;
+            int copyOfNr = nr;
             int newNr = 0;
-            while (nr != 0)
+            while (copyOfNr != 0)
             {
-                newNr = newNr * 10 + nr % 10;
-                nr = nr / 10;
+                newNr = newNr * 10 + copyOfNr % 10;
+                copyOfNr = copyOfNr / 10;
             }
 
-            if (cNr == newNr)
-                Console.WriteLine("The number is palindrome");
+            var result = $"The number is ";
+
+            if (nr == newNr)
+                result += "palindrome";
             else
-                Console.WriteLine("The number is not palindrome");
+                result += "not palindrome";
+
+            Console.WriteLine(result);
         }
 
         static void Prim()
@@ -77,11 +81,11 @@ namespace BT_AUTO_2021_PRogramming
             int nr = int.Parse(Console.ReadLine());
             for (int i = nr; i >= 2; i--)
             {
-                int prim = 1;
-                for (int d = 2; d <= i / 2; d++)
+                bool ok = true;
+                for (int d = 2; d < i; d++)
                     if (i % d == 0)
-                        prim = 0;
-                if (prim == 1)
+                        ok = false;
+                if (ok)
                     Console.WriteLine(i);
             }
         }

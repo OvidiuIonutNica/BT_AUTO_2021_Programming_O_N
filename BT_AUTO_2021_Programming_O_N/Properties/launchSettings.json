@@ -2,7 +2,7 @@
   "profiles": {
     "BT_AUTO_2021_Programming_O_N": {
       "commandName": "Project",
-      "commandLineArgs": "1904 1906 1907 2001"
+      "commandLineArgs": "2 + 5"
     }
   }
 }

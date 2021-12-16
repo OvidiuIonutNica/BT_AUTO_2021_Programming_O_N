@@ -8,10 +8,84 @@ namespace BT_AUTO_2021_PRogramming
         {
             //  Course01(args);
             // Course02(args);
-            // Homework01(args);
-            Course03(args);
-
+            // Course03(args);
+            /*Tema DataTypes_FlowControl	
+            // Homework(args);
+            //  Console.WriteLine(Sum());
+            // Palindrom();
+            //  Prim();  */
         }
+        static void Homework(string[] args)
+        {
+
+            if (args.Length == 3)
+            {
+                float a = float.Parse(args[0]);
+                float b = float.Parse(args[2]);
+                string op = args[1];
+                float result = 0;
+                switch (op)
+                {
+                    case "+":
+                        result = a + b;
+                        break;
+                    case "-":
+                        result = a - b;
+                        break;
+                    case "*":
+                        result = a * b;
+                        break;
+                    case "/":
+                        result = a / b;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Operation");
+                        break;
+                }
+
+                if (result != 0)
+                    Console.WriteLine("Result is: " + result);
+            }
+        }
+        static int Sum()
+        {
+            int sum = 0;
+            for (int i = 1; i <= 100; i++)
+                sum += i;
+            return sum;
+        }
+
+        static void Palindrom()
+        {
+            int nr = int.Parse(Console.ReadLine());
+            int cNr = nr;
+            int newNr = 0;
+            while (nr != 0)
+            {
+                newNr = newNr * 10 + nr % 10;
+                nr = nr / 10;
+            }
+
+            if (cNr == newNr)
+                Console.WriteLine("The number is palindrome");
+            else
+                Console.WriteLine("The number is not palindrome");
+        }
+
+        static void Prim()
+        {
+            int nr = int.Parse(Console.ReadLine());
+            for (int i = nr; i >= 2; i--)
+            {
+                int prim = 1;
+                for (int d = 2; d <= i / 2; d++)
+                    if (i % d == 0)
+                        prim = 0;
+                if (prim == 1)
+                    Console.WriteLine(i);
+            }
+        }
+
         static void Course01(string[] args)
         {
             const int MAX_SIZE = 100;
@@ -305,15 +379,15 @@ namespace BT_AUTO_2021_PRogramming
 
         static bool IsOddNumber(int number)
             {
-            //    if(number % 2!= 0)
-          //      {
-          //          return true;
-          //      }
-          //      else
-          //      {
-            //        return false;
-           //     }
-                return number % 2! = 0;
+                if (number % 2 != 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            //    return (number % 2! = 0);
 
             }
 

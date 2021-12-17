@@ -14,6 +14,7 @@ namespace BT_AUTO_2021_PRogramming
             //  Console.WriteLine(Sum());
             // Palindrom();
             //  Prim();  */
+            Course04();
         }
         static void Homework(string[] args)
         {
@@ -54,7 +55,7 @@ namespace BT_AUTO_2021_PRogramming
                 sum += i;
             return sum;
         }
-
+    
         static void Palindrom()
         {
             int nr = int.Parse(Console.ReadLine());
@@ -393,6 +394,112 @@ namespace BT_AUTO_2021_PRogramming
                 }
             //    return (number % 2! = 0);
 
+            }
+
+        }
+
+        static void Course04()
+        {
+            //EX 1
+            //DrawFullShape(5, 3);
+            //Console.WriteLine();
+            //DrawShapeOutline(5, 3);
+            //Console.WriteLine();
+            //DrawShapeCorners(5,3);
+            //Console.WriteLine();
+
+            //EX 2 - Constructori
+            Circle c1 = new Circle(); //instantiante c1 with default ( no params) constructor   
+            Circle c2 = new Circle(10); // instanta c2 with param 
+            c1.PrintCircle();
+            c2.PrintCircle();
+
+            Person p1 = new Person();
+            Person p2 = new Person("Alex", 'm', new string[] { "Romanian" }, false, new DateTime());
+            p1.PrintPerson();
+            p2.PrintPerson();
+
+            Rectangle r1 = new Rectangle(2, 7);
+            r1.PrintRectangle();
+
+            Square s1 = new Square(6);
+            s1.PrintSquare();
+
+            Struct
+            mystruct.Assign(10, "abc");
+            Console.WriteLine(myStruct.ComputeSum());
+                
+
+        }
+        public static void DrawShapeOutline(int width, int height)
+        {
+
+            for (int j = 0; j < height; j++)
+            {
+                for (int i = 0; i < width; i++) //this will print a single line with + counting width
+                {
+                    if (j ==0 || j==height-1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        if(i==0 || i == width - 1)
+                        {
+                            Console.Write("*");
+                        }
+                        else
+                        {
+                            Console.Write(" ");
+                        }
+                    }
+                      
+                }
+                Console.WriteLine();
+            }
+        }
+        public static void DrawShapeCorners(int width, int height)
+        {
+
+            for (int j = 0; j < height; j++)
+            {
+                for (int i = 0; i < width; i++) //this will print a single line with + counting width
+                {
+                    //     if((j==0 && i==0) || (j==0 && i==width-1) || (j==height-1 || i=0) || (j==height-1 && i==width-1))
+                    if (j == 0 || j == height - 1)
+                    {
+                        if (i == 0 || i == width - 1)
+                        {
+                            Console.Write("*");
+                        }
+                        else
+                        {
+                            Console.Write(" ");
+                        }
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                  
+
+                }
+                Console.WriteLine();
+            }
+               
+            }
+
+       
+        public static void DrawFullShape( int width, int height)
+        {
+            
+            for (int j = 0; j<height; j++) 
+            {
+                for (int i =0; i<width; i++) //this will print a single line with + counting width
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
 
         }

@@ -1,8 +1,9 @@
-﻿using System;
+﻿using BT_AUTO_2021_PRogramming;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BT_AUTO_2021_PRogramming
+namespace BT_AUTO_2021_Programming
 {
     class Triangle : Shape
     {
@@ -35,5 +36,9 @@ namespace BT_AUTO_2021_PRogramming
             return "The triangle has the following sizes: " + l1 + " " + l2 + " " + l3;
         }
 
+        internal void Draw()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

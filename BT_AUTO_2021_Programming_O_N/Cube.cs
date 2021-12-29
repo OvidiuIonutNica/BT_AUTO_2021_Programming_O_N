@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BT_AUTO_2021_Programming_O_N
 {
-    class Homework
+    class Cube
     {
     }
 }

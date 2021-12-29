@@ -799,14 +799,19 @@ namespace BT_AUTO_2021_PRogramming
         private static void Homework_Vol()
         {
             //Cube = V = L³
+            Cube.VolumeCube();
 
             //Sphere  V = 4/3 πr³
+            Sphere.VolumeSphere();
 
             //Pyramid V= (1/3)*(A*A)*h
+            Pyramid.VolumePyramid();
 
-            //Cylinder V= πr2h
+            //Cylinder V= π(r*r)h
+            Cylinder.VolumeCylinder();
 
             //Torus V = π × r2 × 2 × π × R
+            Torus.VolumeTorus();
         }
 
 
@@ -814,13 +819,13 @@ namespace BT_AUTO_2021_PRogramming
 
         private static void Library()
         {
-            Author.Autor(name:"ion smecherul", email:"ion.smecherul@btrl.ro");
-            Author.getName();
-            Author.getEmail(); 
-           // Book.book(name: "cartea junglei", year: 2010, , price: 20);
-            Book.getName();
-            Book.getPrice();
-            Book.getYear();
+        //    Author.Autor(name:"ion smecherul", email:"ion.smecherul@btrl.ro");
+        //    Author.getName();
+        //    Author.getEmail(); 
+        //   // Book.book(name: "cartea junglei", year: 2010, , price: 20);
+        //    Book.getName();
+        //    Book.getPrice();
+        //    Book.getYear();
 
         }
 

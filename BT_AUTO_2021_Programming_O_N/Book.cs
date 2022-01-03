@@ -5,17 +5,15 @@ using BT_AUTO_2021_PRogramming_O_N;
 
 namespace BT_AUTO_2021_Programming_O_N
 {
-    public class Book
+    public static class Book
     {
-        public string name = "Cartea Junglei";
-        public int year = 2010;
-        public double price = 20;
+        //public string name = "Cartea Junglei";
+        //public int year = 2010;
+        //public double price = 20;
 
-        public Author author;
-
-        public static void book(string name, int year, Author author, double price)
+        public static void PrintBook(string name, int year, Author author, double price)
         {
-            Console.WriteLine("Numele cartii este: " + name + " Anul in care a fost publicata cartea: " + year + " Autorul cartii este: " + author.name + " Pretul cartii: ");
+            Console.WriteLine($"Numele cartii este: {name} Anul in care a fost publicata cartea: {year} Autorul cartii este: {author.Name} Pretul cartii: {price}");
         }
 
         public static void getName()
@@ -36,7 +34,11 @@ namespace BT_AUTO_2021_Programming_O_N
         {
             int year = 2010;
             Console.WriteLine(year);
+           
         }
+
+       
+
 
     }
 }

@@ -351,7 +351,9 @@ namespace BT_AUTO_2021_PRogramming
         //    c1.PrintCircle();
         //    Circle c3 = new Circle();
         //    c3.SetRadius(5);
-        //    //Console.WriteLine(c3.GetArea());//
+        //    //Console.W
+        //
+        //    riteLine(c3.GetArea());//
         //    c3.PrintCircle();
         //    foreach (string p in args)
         //    {
@@ -799,19 +801,22 @@ namespace BT_AUTO_2021_PRogramming
         private static void Homework_Vol()
         {
             //Cube = V = L³
-            Cube.VolumeCube();
+            //     Cube.VolumeCube();
 
             //Sphere  V = 4/3 πr³
-            Sphere.VolumeSphere();
+            //    Sphere.VolumeSphere();
 
             //Pyramid V= (1/3)*(A*A)*h
-            Pyramid.VolumePyramid();
+            //    Pyramid.VolumePyramid();
 
             //Cylinder V= π(r*r)h
-            Cylinder.VolumeCylinder();
+            //    Cylinder.VolumeCylinder();
+          
+            Cylinder c = new Cylinder();
+            c.PrintCylinder();
 
             //Torus V = π × r2 × 2 × π × R
-            Torus.VolumeTorus();
+            //    Torus.VolumeTorus();
         }
 
 
@@ -819,10 +824,11 @@ namespace BT_AUTO_2021_PRogramming
 
         private static void Library()
         {
+            Author author = new Author();
         //    Author.Autor(name:"ion smecherul", email:"ion.smecherul@btrl.ro");
         //    Author.getName();
         //    Author.getEmail(); 
-        //   // Book.book(name: "cartea junglei", year: 2010, , price: 20);
+              Book.PrintBook("cartea junglei", 2010, author, price: 20);
         //    Book.getName();
         //    Book.getPrice();
         //    Book.getYear();

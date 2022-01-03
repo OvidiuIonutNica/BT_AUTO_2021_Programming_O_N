@@ -6,7 +6,7 @@ namespace BT_AUTO_2021_Programming_O_N
 {
     class Cube
     {
-        //Cube = V = L³
+         //Cube = V = L³
         public static void VolumeCube()
         {
             var L = 50;

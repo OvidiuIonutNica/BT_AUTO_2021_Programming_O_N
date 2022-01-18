@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT_AUTO_2021_Programming_O_N", "BT_AUTO_2021_Programming_O_N\BT_AUTO_2021_Programming_O_N.csproj", "{BC7DD798-CCE7-43A5-8D99-9E71394A0D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BT_AUTO_2021_Programming_O_N", "BT_AUTO_2021_Programming_O_N\BT_AUTO_2021_Programming_O_N.csproj", "{BC7DD798-CCE7-43A5-8D99-9E71394A0D80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nunit_Auto_2022", "Nunit_Auto_2022\Nunit_Auto_2022.csproj", "{A51CC741-F5B3-490F-B79A-95B9A0A7AD96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTest_Auto_2022", "MSTest_Auto_2022\MSTest_Auto_2022.csproj", "{EDAEFAC1-569E-4D4B-9344-00013B88C976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUNIT_Auto_2022", "XUNIT_Auto_2022\XUNIT_Auto_2022.csproj", "{9202ABE6-D704-4113-A87B-3230704C2EC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BC7DD798-CCE7-43A5-8D99-9E71394A0D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC7DD798-CCE7-43A5-8D99-9E71394A0D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC7DD798-CCE7-43A5-8D99-9E71394A0D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51CC741-F5B3-490F-B79A-95B9A0A7AD96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51CC741-F5B3-490F-B79A-95B9A0A7AD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51CC741-F5B3-490F-B79A-95B9A0A7AD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51CC741-F5B3-490F-B79A-95B9A0A7AD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAEFAC1-569E-4D4B-9344-00013B88C976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAEFAC1-569E-4D4B-9344-00013B88C976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAEFAC1-569E-4D4B-9344-00013B88C976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAEFAC1-569E-4D4B-9344-00013B88C976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9202ABE6-D704-4113-A87B-3230704C2EC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202ABE6-D704-4113-A87B-3230704C2EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9202ABE6-D704-4113-A87B-3230704C2EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9202ABE6-D704-4113-A87B-3230704C2EC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
